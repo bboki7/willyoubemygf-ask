@@ -57,7 +57,7 @@ envelope.addEventListener("click", () => {
      }
  });
 
- YES is clicked
+// YES is clicked
 
 yesBtn.addEventListener("click", () => {
     title.textContent = "Yippeeee!";
