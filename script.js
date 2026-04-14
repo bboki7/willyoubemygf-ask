@@ -38,7 +38,7 @@ envelope.addEventListener("click", () => {
 
 // Logic to make YES btn to grow
 
- let yesScale = 1;
+yesScale = 1;
 
  yesBtn.style.position = "relative"
  yesBtn.style.transformOrigin = "center center";
@@ -47,12 +47,12 @@ envelope.addEventListener("click", () => {
  noBtn.addEventListener("click", () => {
      yesScale += 2;
 
-     if (yesBtn.style.position !== "fixed") {
+      (yesBtn.style.position !== "fixed") {
          yesBtn.style.position = "fixed";
          yesBtn.style.top = "50%";
          yesBtn.style.left = "50%";
          yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-    }else{
+    }{
         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
      }
  });
